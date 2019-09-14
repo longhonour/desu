@@ -1,0 +1,24 @@
+{% extends "../_layout/home/home.html" %}
+
+{% block title %}德速物流-首页{% endblock %}
+
+{% block css %}
+    <link href="/js/lib/swiper/swiper.min.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    {# 介绍轮播 #}
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            {% for i in [1,2,3,4,5,6] %}
+            <div class="swiper-slide"><img src="/images/banner_0{{ i }}.jpg"></div>
+            {% endfor %}
+        </div>
+        <div class="swiper-pagination swiper-pagination-white"></div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    {{ super() }}
+    <script src="/js/lib/swiper/swiper.jquery.min.js"></script>
+{% endblock %}
