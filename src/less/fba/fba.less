@@ -2,3 +2,90 @@
 @import '../common/common.less';
 
 @import '../common/banner.less';
+
+.fba-container {
+    width: 940px;
+    min-height: 360px;
+    position: relative;
+    margin: 0 auto;
+    padding: 35px 0 100px 260px;
+}
+
+.fba-nav {
+    width: 220px;
+    background: #fff;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    bottom: 35px;
+    border-right: 1px solid #E1E9EB;
+
+    span {
+        padding: 0 20px;
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        transition: all .4s ease;
+        cursor: pointer;
+
+        &.active,
+        &:hover {
+            background: @activeColor;
+            color: #fff;
+        }
+    }
+}
+
+.module-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.content-mod {
+    margin-top: 25px;
+
+    .sub-cont-title {
+        display: block;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .cont-desc {
+        color: @col6;
+        margin-top: 15px;
+        line-height: 22px;
+    }
+}
+
+.advantage-cont {
+    margin-top: 15px;
+    line-height: 28px;
+
+    .sub-cont {
+        text-indent: 1em;
+        color: @col6;
+    }
+}
+
+.advantage-title {
+    display: block;
+    font-weight: bold;
+}
+
+.field-item {
+    line-height: 28px;
+
+    p {
+        overflow: hidden;
+        zoom: 1;
+    }
+
+    label,
+    span {
+        float: left;
+    }
+
+    span {
+        color: @col6;
+    }
+}
