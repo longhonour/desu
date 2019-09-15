@@ -7,19 +7,23 @@
     <meta name="renderer" content="webkit">
     <title>{% block title %}{% endblock %}</title>
     <meta name="keywords" content="德速,物流,互联网" />
-    <meta name="description" content="德速物流" />
+    <meta name="description" content="德速电商物流" />
     {% block css %}{% endblock %}
 </head>
 
 <body>
-    {% include "../../_component/nav.html" %}
+    {% block nav %}
+        {% include "../../_component/nav.html" %}
+    {% endblock %}
     
     {% block content %}{% endblock %}
 
-    {% include "../../_component/footer.html" %}
+    {% block footer %}
+        {% include "../../_component/footer.html" %}
+    {% endblock %}
 
     {% block js %}
-    <script src="/js/lib/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/lib/jquery.min.js"></script>
     {% endblock %}
 </body>
 

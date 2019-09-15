@@ -5,6 +5,11 @@
     left: 0;
     right: 0;
     z-index: 10;
+    transition: background-color .4s ease;
+
+    &.active {
+        background: #011A21;
+    }
 
     .nav-container {
         height: 60px;
@@ -21,6 +26,7 @@
             width: 112px;
             text-align: center;
             line-height: 60px;
+            font-size: 0;
         }
 
         img {
@@ -53,7 +59,8 @@
         transform: skew(-20deg);
         position: absolute;
         top: 0;
-        left: 168px;
+        left: 0;
+        display: none;
     }
 
     .side-info {

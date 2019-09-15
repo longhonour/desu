@@ -1,0 +1,133 @@
+// 引入公共样式
+@import '../common/common.less';
+
+@import '../common/banner.less';
+
+
+.intl-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.advantage-info {
+    padding: 110px 140px 80px;
+    font-size: 20px;
+    line-height: 50px;
+    position: relative;
+
+    em {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .quote-top {
+        position: absolute;
+        top: 35px;
+        left: 35px;
+    }
+
+    .quote-bottom {
+        position: absolute;
+        bottom: 35px;
+        right: 35px;
+    }
+}
+
+.advantage-container {
+    padding: 60px 0;
+}
+
+.advantage-list {
+    margin-top: 40px;
+    overflow: hidden;
+
+    ul {
+        margin: -20px 0 0 -20px;
+        overflow: hidden;
+        zoom: 1;
+    }
+
+    li {
+        float: left;
+        width: 590px;
+        height: 285px;
+        overflow: hidden;
+        margin: 20px 0 0 20px;
+        position: relative;
+
+        img {
+            display: block;
+            max-width: 100%;
+            transition: transform 2.6s linear;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+
+    .large-item {
+        height: 590px;
+    }
+
+    .address-tag {
+        padding-left: 10px;
+        font-size: 18px;
+        line-height: 20px;
+        color: #fff;
+        font-weight: bold;
+        border-left: 5px solid @activeColor;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+.advantage-note {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 34px;
+
+    em {
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.partner-container {
+    padding: 40px 0 140px;
+
+    .partner-note {
+        margin-top: 50px;
+        font-size: 24px;
+        color: #46566b;
+        font-weight: bold;
+        text-align: center;
+        line-height: 46px;
+    }
+}
+
+.partner-list {
+    margin-top: 40px;
+    overflow: hidden;
+
+    ul {
+        margin: -40px 0 0 -40px;
+        overflow: hidden;
+        zoom: 1;
+    }
+
+    li {
+        width: 270px;
+        height: 80px;
+        float: left;
+        margin: 40px 0 0 40px;
+
+        img {
+            display: block;
+        }
+    }
+}

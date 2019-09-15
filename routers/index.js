@@ -1,7 +1,11 @@
 // 路由集中点
 const routers = [
     require('./home.js'),
-    require('./user.js')
+    require('./fba.js'),
+    require('./intl.js'),
+    require('./about.js'),
+    require('./campus.js'),
+    require('./contact.js')
 ]
 // 简单封装 
 module.exports = function (app) {

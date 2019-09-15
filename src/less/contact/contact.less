@@ -1,0 +1,207 @@
+// 引入公共样式
+@import '../common/common.less';
+
+@import '../common/banner.less';
+
+
+.contact-module {
+    padding: 110px 0 60px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-list {
+    margin-top: 40px;
+
+    ul {
+        margin: -20px 0 0 -20px;
+    }
+
+    li {
+        float: left;
+        width: 530px;
+        padding: 60px 30px;
+        margin: 20px 0 0 20px;
+        min-height: 180px;
+        border-radius: 10px;
+        background: url(/images/logo_gray.png) no-repeat 92% 90%;
+        box-shadow: 0 0 5px 0 rgba(124, 137, 143, .2);
+    }
+
+    .contact-name {
+        display: block;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .contact-address {
+        margin-top: 10px;
+    }
+
+    .contact-personal {
+        margin-top: 20px;
+    }
+
+    .persoan-name {
+        font-size: 18px;
+    }
+
+    .contact-item {
+        margin-top: 10px;
+        padding-left: 30px;
+        color: #50607f;
+    }
+
+    .contact-phone {
+        background: url(/images/sprites/phone.png) no-repeat 0 2px;
+    }
+
+    .contact-email {
+        background: url(/images/sprites/email.png) no-repeat 0 5px;
+    }
+
+    .contact-time {
+        line-height: 22px;
+        background: url(/images/sprites/time.png) no-repeat 0 5px;
+    }
+
+    .whole-item {
+        width: 560px;
+        padding: 60px 610px 60px 30px;
+        position: relative;
+        background: none;
+
+        .address-figure {
+            width: 570px;
+            height: 270px;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            overflow: hidden;
+
+            img {
+                display: block;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+.slogan-module {
+    max-width: 1920px;
+    max-height: 620px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        display: block;
+        max-width: 100%;
+        animation: scaleAnimation 8s both linear;
+    }
+
+    .slogan-content {
+        width: 800px;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -132px 0 0 -400px;
+        text-align: center;
+    }
+
+    .slogan-logo {
+        width: 112px;
+        margin: 0 auto;
+        text-align: center;
+
+        img {
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 100%;
+        }
+    }
+
+    .slogan-first {
+        font-size: 48px;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    .slogan-second {
+        margin-top: 45px;
+        font-size: 52px;
+        font-weight: bold;
+    }
+}
+
+.navigate-container {
+    padding: 75px 0 90px;
+
+    .map-content {
+        width: 1200px;
+        overflow: hidden;
+        margin: 35px auto 0;
+        position: relative;
+    }
+
+    .map-box {
+        height: 540px;
+    }
+}
+
+.mark-list {
+    padding-left: 15px;
+    width: 325px;
+    height: 320px;
+    background: #fff;
+    box-shadow: 0 0 12px 0 #b2b6c1;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -160px;
+
+    span {
+        display: block;
+        padding-left: 30px;
+        border-top: 1px dashed #E1E9EB;
+        line-height: 62px;
+        cursor: pointer;
+        position: relative;
+
+        &:first-child {
+            border: none;
+        }
+
+        &.active,
+        &:hover {
+            color: @activeColor;
+        }
+    }
+
+    .order-num {
+        width: 22px;
+        height: 28px;
+        background: url(/images/sprites/mark.png) no-repeat center center;
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        line-height: 20px;
+        font-weight: bold;
+        position: absolute;
+        top: 16px;
+        left: 0;
+    }
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.08);
+    }
+}

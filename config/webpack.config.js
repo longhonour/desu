@@ -26,7 +26,11 @@ const templateFunction = function (data) {
 // 多入口
 let entry = {
     home: 'src/js/home/home.js',
-    user: 'src/js/user/user.js'
+    about: 'src/js/about/about.js',
+    fba: 'src/js/fba/fba.js',
+    campus: 'src/js/campus/campus.js',
+    intl: 'src/js/intl/intl.js',
+    contact: 'src/js/contact/contact.js',
 }
 
 module.exports = evn => ({

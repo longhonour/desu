@@ -1,20 +1,29 @@
 import '../../less/home/home.less';
 
-$(function () {
-    new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        autoplay: 3000,
-        speed: 800,
-        spaceBetween: 0,
-        effect: 'fade'
-    });
+import '../common/common';
 
-    $(".nav-item a").on('mouseenter', function () {
-        var curPos = $(this).position();
-        $(".nav-hover").stop(false, false).animate({
-            left: curPos.left + 165,
-            top: curPos.top
-        }, 300);
-    });
-})
+var serviceTop = $('#service-cont').offset().top;
+var scrollTimer = null;
+new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    autoplay: 3000,
+    speed: 800,
+    spaceBetween: 0,
+    effect: 'fade'
+});
+
+function navScroll() {
+    var cTop = $(window).scrollTop();
+    if (cTop <= serviceTop) {
+        $('.main-nav').removeClass('active');
+    } else {
+        $('.main-nav').addClass('active');
+    }
+};
+navScroll();
+
+$(window).scroll(function () {
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(navScroll, 10);
+});

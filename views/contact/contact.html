@@ -1,0 +1,104 @@
+{% extends "../_layout/contact/contact.html" %}
+
+{% block title %}德速电商物流-联系我们{% endblock %}
+
+{% import "../_component/banner.html" as banner %}
+
+{% block content %}
+{{ banner.setInfo('联系我们','比卖家更懂物流，比物流更懂平台，比平台更懂卖家') }}
+<div class="contact-module">
+    <h3 class="main-title">联系我们</h3>
+    <p class="sub-desc">Contact Us</p>
+    <div class="contact-list">
+        <ul class="clear">
+            <li class="whole-item">
+                <strong class="contact-name">德速电商物流（广州）有限公司</strong>
+                <p class="contact-address">广州市越秀区建设六马路33号宜安广场1708</p>
+                <div class="contact-personal">
+                    <span class="persoan-name">Toby Zou</span>
+                    <p class="contact-item contact-phone">13538945698</p>
+                    <p class="contact-item contact-email">toby.zou@deksu.com</p>
+                </div>
+                <div class="address-figure">
+                    <img src="/images/contact/contact_address.jpg">
+                </div>
+            </li>
+            <li>
+                <strong class="contact-name">德速电商物流（广州）有限公司深圳分公司</strong>
+                <p class="contact-address">深圳市龙华区龙环三路329号金禾田商务中心4楼J427</p>
+                <div class="contact-personal">
+                    <span class="persoan-name">Andy Wang</span>
+                    <p class="contact-item contact-phone">13828701045</p>
+                    <p class="contact-item contact-email">andy.wang@deksu.com</p>
+                </div>
+            </li>
+            <li>
+                <strong class="contact-name">德速电商物流（广州）有限公司厦门分公司</strong>
+                <p class="contact-address">厦门市湖里区象屿保税区自贸时代广场B栋416</p>
+                <div class="contact-personal">
+                    <span class="persoan-name">Max Lai</span>
+                    <p class="contact-item contact-phone">18529131070</p>
+                    <p class="contact-item contact-email">max.lai@deksu.com</p>
+                </div>
+            </li>
+            <li>
+                <strong class="contact-name">德速电商物流广州仓</strong>
+                <p class="contact-address">广州市白云区七星岗环岗一路1号A栋A2单元（可导航至“德速电商物流广州仓”）</p>
+                <div class="contact-personal">
+                    <span class="persoan-name">陈伟林/ 任伟聪</span>
+                    <p class="contact-item contact-phone">15521263433/ 13711488484</p>
+                    <p class="contact-item contact-time">
+                        仓库收货时间：<br />
+                        周一至周五：10:00-22:00（22:00后到仓，视情况处理）<br />
+                        周六：10:00-18:00<br />
+                        工作日午休时间：12:30-14:00
+                    </p>
+                </div>
+            </li>
+            <li>
+                <strong class="contact-name">德速电商物流深圳仓</strong>
+                <p class="contact-address">深圳市龙岗区凤凰大道668号深圳喜年实业发展园区1号仓库</p>
+                <div class="contact-personal">
+                    <span class="persoan-name">何武辉/ 叶子良</span>
+                    <p class="contact-item contact-phone">18025332260/ 18100275161</p>
+                    <p class="contact-item contact-time">
+                        仓库收货时间：<br />
+                        周一至周五：10:00-22:00（22:00后到仓，视情况处理）<br />
+                        周六：10:00-18:00<br />
+                        工作日午休时间：12:30-14:00
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="slogan-module">
+    <img src="/images/contact/contact_team.jpg">
+    <div class="slogan-content">
+        <h2 class="slogan-logo">
+            <img src="/images/logo.png">
+        </h2>
+        <p class="slogan-first">德速，期待您的联系</p>
+        <p class="slogan-second">We are waiting for you！</p>
+    </div>
+</div>
+<div class="navigate-container">
+    <h3 class="main-title">导航我们</h3>
+    <p class="sub-desc">Navigate us</p>
+    <div class="map-content">
+        <div id="allmap" class="map-box"></div>
+        <div class="mark-list">
+            <span><i class="order-num">1</i>德速电商物流（广州）有限公司</span>
+            <span><i class="order-num">2</i>德速电商物流（广州）有限公司深圳分公司</span>
+            <span><i class="order-num">3</i>德速电商物流（广州）有限公司厦门分公司</span>
+            <span><i class="order-num">4</i>德速电商物流广州仓</span>
+            <span><i class="order-num">5</i>德速电商物流深圳仓</span>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+{{ super() }}
+<script src="http://api.map.baidu.com/getscript?v=2.0&ak=sFjabtG0Vl68mMwYFyxyFs1dKu7VpYAM"></script>
+{% endblock %}

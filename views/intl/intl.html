@@ -1,0 +1,52 @@
+{% extends "../_layout/intl/intl.html" %}
+
+{% block title %}德速电商物流-国际物流业务{% endblock %}
+
+{% import "../_component/banner.html" as banner %}
+
+{% block content %}
+{{ banner.setInfo('国际物流业务','空、海运航线资源，分布全球的优质代理网络') }}
+<div class="intl-container">
+    <div class="advantage-info">
+        <i class="quote quote-top"></i>
+        <i class="quote quote-bottom"></i>
+        <em>德捷国际物流，</em>作为德速投资子公司，依靠传统优势的空海运航线资源，以及分布全球的优质代理网络，为中国出口厂家商家提供全球门到门的空海运国际货运业务。
+    </div>
+    <div class="advantage-container">
+        <h3 class="main-title">优势航线</h3>
+        <p class="sub-desc">Advantage Route</p>
+        <div class="advantage-list">
+            <ul>
+                <li class="large-item">
+                    <img src="/images/intl/advantage_01.jpg">
+                    <span class="address-tag">北美地区</span>
+                </li>
+                <li>
+                    <img src="/images/intl/advantage_02.jpg">
+                    <span class="address-tag">中东红海地区</span>
+                </li>
+                <li>
+                    <img src="/images/intl/advantage_03.jpg">
+                    <span class="address-tag">非洲地区</span>
+                </li>
+            </ul>
+        </div>
+        <p class="advantage-note">
+            <em>德捷国际物流</em>在北美地区，中东红海地区，非洲地区，具备优质的空海运航线资源，熟悉当地清关模式和目的地派送网络，有多年的相关地区货运操作经验，为中国出口厂家商家和当地代理指定运输货物提供港到港以及门到门物流服务。
+        </p>
+    </div>
+    <div class="partner-container">
+        <h3 class="main-title">合作伙伴</h3>
+        <p class="sub-desc">Our Partners</p>
+        <div class="partner-list">
+            <ul>
+                {% for i in [1,2,3,4,5,6,7,8,9,10,11,12] %}
+                <li><img src="/images/intl/partner_0{{ i }}.jpg"></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <p class="partner-note">德捷国际物流的渠道产品具备优质的空海运航线资源，与各大航司船司有着多年的深厚合作关系，有长期包板包量合同和全年合约支持客户全方位多方面的航线需求。</p>
+    </div>
+</div>
+</div>
+{% endblock %}
