@@ -8,18 +8,23 @@
 {{ banner.setInfo('FBA物流业务','德速自主设计的头程空运、海派、海卡、快递直发四大特色服务') }}
 <div class="fba-container">
     <div class="fba-nav">
-        <span class="active">FBA专区</span>
-        <span>FBA发货须知</span>
-        <span>FBA仓库地址</span>
-        <span>美国关税查询方式</span>
-        <span>欧洲关税查询方式</span>
-        <span>欧洲VAT计算方式</span>
+        <span href="#base-mod" class="active">FBA专区</span>
+        <span href="#delivery-mod">FBA发货须知</span>
+        <span href="#">FBA仓库地址</span>
+        <span href="#USA-mod">美国关税查询方式</span>
+        <span href="#EU-mod">欧洲关税查询方式</span>
+        <span href="#EUVAT-mod">欧洲VAT计算方式</span>
     </div>
     <div class="fba-content">
         {% include "./fba_base.html" %}
 
         {% include "./fba_delivery.html" %}
 
+        {% include "./fba_usa.html" %}
+
+        {% include "./fba_eu.html" %}
+
+        {% include "./fba_eu_vat.html" %}
     </div>
 </div>
 
