@@ -31,10 +31,13 @@
     }
 
     .about-figure {
-        height: 700px;
+        height: 350px;
+        text-align: center;
 
         img {
-            display: block;
+            max-height: 100%;
+            display: inline-block;
+            vertical-align: top;
         }
     }
 
@@ -112,7 +115,7 @@
         transition: all 0.4s ease-in-out;
 
         h3 {
-            font-size: 38px;
+            font-size: 30px;
             font-weight: bold;
             position: relative;
             padding-bottom: 20px;
@@ -122,7 +125,7 @@
             &:after {
                 content: '';
                 display: block;
-                width: 75px;
+                width: 60px;
                 height: 6px;
                 border-radius: 3px;
                 background: #fff;
@@ -134,13 +137,13 @@
 
         p {
             margin-top: 25px;
-            font-size: 24px;
+            font-size: 18px;
             line-height: 40px;
             transform: translateY(100px);
             transition: all 0.2s linear;
 
             span {
-                font-size: 18px;
+                font-size: 16px;
             }
         }
 
@@ -197,6 +200,7 @@
         position: relative;
 
         ul {
+            width: 105%;
             overflow: hidden;
             zoom: 1;
             margin: -20px 0 0 -20px;
@@ -216,7 +220,7 @@
             }
 
             .small-figure {
-                width: 47.5%;
+                width: 48%;
                 margin-left: 20px;
 
                 &:first-child {
@@ -238,18 +242,15 @@
         }
 
         .team420 {
-            width: 21%;
+            width: 20.7%;
         }
 
         .team650 {
-            width: 33.5%;
-            position: absolute;
-            top: -20px;
-            right: 0;
+            width: 32.7%;
         }
 
         .team810 {
-            width: 41.2%;
+            width: 40%;
         }
     }
 }
