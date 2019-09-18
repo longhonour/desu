@@ -1,9 +1,9 @@
-const userRouter = require('koa-router')()
+const campusRouter = require('koa-router')()
 
-userRouter.get('/campus', (ctx, next) => {
+campusRouter.get('/campus', (ctx, next) => {
     ctx.render('campus/campus.html', {
         title: '人才招聘'
     })
 })
 
-module.exports = userRouter
+module.exports = campusRouter

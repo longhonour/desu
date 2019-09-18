@@ -1,9 +1,9 @@
-const userRouter = require('koa-router')()
+const fbaRouter = require('koa-router')()
 
-userRouter.get('/fba-business', (ctx, next) => {
+fbaRouter.get('/fba-business', (ctx, next) => {
     ctx.render('fba/fba.html', {
         title: 'FBA物流业务'
     })
 })
 
-module.exports = userRouter
+module.exports = fbaRouter
