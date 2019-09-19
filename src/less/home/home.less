@@ -64,7 +64,7 @@
 
     .item-picture {
         overflow: hidden;
-        height: 395px;
+        height: 450px;
 
         img {
             display: block;
@@ -82,7 +82,22 @@
     }
 
     .item-info {
-        padding: 65px 20px 55px 75px;
+        height: 450px;
+        padding: 20px 20px 20px 75px;
+
+        &:after {
+            content: '';
+            width: 0;
+            height: 100%;
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .info-content {
+            display: inline-block;
+            vertical-align: middle;
+        }
 
         h3 {
             font-size: 30px;
@@ -146,10 +161,7 @@
 
         .item-info {
             text-align: right;
-        }
-
-        .item-info {
-            padding: 65px 75px 55px 20px;
+            padding: 20px 75px 20px 20px;
         }
 
         .info-txt {
